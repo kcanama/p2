@@ -2,13 +2,46 @@
 <html>
 <head>
     <title>My Website</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Niramit" rel="stylesheet">
+
+    <style>
+        h1 {
+            font-family: 'Lobster', cursive;
+
+        }
+
+        p {
+            font-family: 'Niramit', sans-serif;
+        }
+
+        .fa-car:hover {
+
+            color: yellowgreen;
+        }
+
+        .column {
+            float: left;
+        }
+
+        #c1 {
+            width: 25%;
+        }
+
+        #c2 {
+            width: 75%
+        }
+        
+        
+    </style>
 </head>
 
 <body>
     <header>
-        
-       <p>test</p>
-        <img src="assets/img/logo.png">
+
+
+        <img src="assets/img/logo.png" id="logo">
         <nav>
             <ul>
                 <li>
@@ -23,48 +56,53 @@
 
 
     </header>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/5XUGy20HH1I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    <h1>This is my site</h1>
-    <img src="assets/img/bio.jpg">
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-
-
-    <ul>
-        <li>List </li>
-        <li>List </li>
-        <ul>
-            <li>List</li>
-            <li>List</li>
-        </ul>
-        <li>List</li>
-
-    </ul>
+    <div id="container">
+        <i class="fa fa-car" style="font-size:60px;color:red;"></i>
+        <iframe width="100%" height="315" src="https://www.youtube.com/embed/5XUGy20HH1I" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        <h1>This is my site</h1>
+        <div class="col">
+            <img src="assets/img/bio.jpg">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
 
-    <table border="1">
-        <tr>
-            <th>Row Title</th>
-            <th>Row Title</th>
-            <th>Row Title</th>
-        </tr>
-        <tr>
-            <td>Text</td>
-            <td>Text</td>
-            <td>Text</td>
-        </tr>
-        <tr>
-            <td>Text</td>
-            <td>Text</td>
-            <td>Text</td>
-        </tr>
-        <tr>
-            <td>Text</td>
-            <td>Text</td>
-            <td>Text</td>
-        </tr>
-    </table>
-    <br>
+            <ul>
+                <li>List </li>
+                <li>List
+                    <ul>
+                        <li>List</li>
+                        <li>List</li>
+                    </ul>
+                </li>
+                <li>List</li>
+
+            </ul>
+        </div>
+        <div class="col">
+            <table border="1">
+                <tr>
+                    <th>Row Title</th>
+                    <th>Row Title</th>
+                    <th>Row Title</th>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                    <td>Text</td>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                    <td>Text</td>
+                    <td>Text</td>
+                </tr>
+                <tr>
+                    <td>Text</td>
+                    <td>Text</td>
+                    <td>Text</td>
+                </tr>
+            </table>
+        </div>
+        <br style=clear:both>
+    </div>
     <footer>
         <p>
             <a href="index.html">Home | </a>
